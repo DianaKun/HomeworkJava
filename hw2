@@ -1,0 +1,54 @@
+# HomeworkJava
+public class hw2 {
+    public static void main (String[] agrs) {
+        System.out.println(funcNumber1(10, 20));
+        System.out.println(funcNumber2(-8));
+        System.out.println(funcNumber3(56));
+        funcNumber4("hi java", 4);
+        System.out.println(visGod(500));
+
+    }
+    public static boolean funcNumber1 (int a, int b) {
+        boolean x;
+        if ( (a+b) <= 10 && (a+b) <= 20) {
+            x = true;
+        } else {
+            x = false;
+        }
+        return x;
+    }
+    public static String funcNumber2 (int c) {
+        String s;
+        if ( c >=0) {
+            s = "положительное";
+        } else {
+            s = "отрицательное";
+        }
+        return s;
+    }
+    public static boolean funcNumber3 (int d) {
+        boolean b;
+        if (d >= 0) {
+            b = true;
+        } else {
+            b = false;
+        }
+        return b;
+    }
+    public static void funcNumber4 (String s, int t) {
+        for (int i = 0; i < t; i++ ) {
+            System.out.println(s);
+        }
+    }
+    public static boolean visGod (int year) {
+        boolean l;
+        if ((year % 4 == 0) && (year % 400 == 0)) {
+            l = true;
+        } else if  (year % 100 == 0) {
+            l = false;
+        } else {
+            l = false;
+        }
+        return l;
+    }
+}
